@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fccb4aa90b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>P</span>RANSHU</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <!-- <img src="background.jpg" alt=""> -->
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Pranshu </span> <br> Gupta from Satna</h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="psg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am Pranshu Gupta from Satna and currently in Bhopal pursuing my B.tech from Nri Institue of Information Science and Technology.I have done my schooling from St.Micheals Senior Secondary School Satna.I am a Frontend Developer and
+                        currently working on my backend skills.
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web Interfaces</li>
+                            <li><span>Front-end</span><br> Website Development</li>
+                            <li><span>Back-end</span><br>Website Development</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>University Website</span><br> Full College Website</li>
+                            <li><span>Apple clone</span><br>Clone of Apple Website Landing Page</li>
+                            <li><span>Various Landing Pages</span><br>Landing Pages </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 -2023</span><br> B.tech at Nri Institue of Information Science and Technology</li>
+                            <li><span>2019</span><br> Higher Secondary Education at St.Michaels School Satna</li>
+                            <li><span>2017</span><br>Secondary Education at St.Michaels School Satna</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia illum ut adipisci hic earum eaque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Front-end Developer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maxime repellendus qui non tempore magnam nostrum totam eligendi esse excepturi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-internet-explorer"></i>
+                    <h2>Back-end Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit, dolore incidunt dolorem ad assumenda soluta laborum impedit voluptate voluptates?</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle"> My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="university.png" alt="">
+                    <div class="layer">
+                        <h3>University website</h3>
+                        <p>Its a website where people can get Information about there college and can give feedback.</p>
+                        <a href="https://pranshugp.github.io/b21website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+
+                    <img src="voyage.png" alt="">
+                    <div class="layer">
+                        <h3>The Playfair and Voyage</h3>
+                        <p>Its simple Full Website and it was making for the practice purpose only.</p>
+                        <a href="https://pranshugp.github.io/playfair/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="nike.png" alt="">
+                    <div class="layer">
+                        <h3>Nike Shoes Landing page</h3>
+                        <p>Its a clone of a nike shoes Landing page and i have used various animations using Gsap library of a JavaScript and make it look like really fun.</p>
+                        <a href="https://pranshugp.github.io/nikeshoes/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="https://github.com/pranshugp?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pranshugupta641@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9174037761,7389669888</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/pranshupsg/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pranshu-gupta-9a898321b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/pranshugp?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Pranshu frontend.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <span>&#169;</span> Pranshu . Made with <i class="fa-solid fa-heart"></i> by Pranshu Gupta</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSQ4Msfgdjqdtl9Zo2Tx7IVNHDO2nvuv2uMZZ1pOPgLY4uJ3tsnHjd31Xz22YS3nKTsQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
